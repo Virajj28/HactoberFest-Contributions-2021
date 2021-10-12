@@ -10,7 +10,7 @@
 <body>
     <div class="calci">
         <form name="calc">
-            <input type="text"  id="result" placeholder="0">
+            <input type="text" name="display" id="result" placeholder="0">
             <div class="numbers">
                 <div class="calCol">
                     <span class="btn" value="7" onclick="dis('7')">7</span>
@@ -35,7 +35,7 @@
                     <span class="btn" value="=" onclick= "answer()">=</span>
                     <span class="btn" value="*" onclick="dis('*')">*</span>
                     <span class="btn" value="/" onclick="dis('/')">/</span>
-                    <span class="btn" value=" " onclick="clear()">C</span>
+                    <span class="btn" value="DELETE" onclick="calc.display.value=' '" id="del">C</span>
                 </div>
             </div>
         </form>
